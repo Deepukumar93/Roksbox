@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>Rocksbox - Joy of Jewelry</title>
 
   <!-- ✅ Bootstrap CSS CDN -->
@@ -25,7 +26,7 @@
 
       <!-- Nav links --> 
       <div class="collapse navbar-collapse" id="navbarNav shadow-sm " >
-        <ul class="navbar-nav me-auto  text-uppercase fw-bold gap-3  "> 
+        <ul class="navbar-nav me-auto  text-uppercase fw-bold gap-4 "> 
           
           <li class="nav-item"><a class="nav-link btn btn-danger  border border-success rounded-circle text-white fw-bold " href="shop-by/index.html">Shop By</a></li>
           <li class="nav-item"><a class="nav-link btn btn-danger border border-success rounded-circle text-white fw-bold" href="#">New</a></li>
@@ -35,14 +36,16 @@
           <li class="nav-item"><a class="nav-link btn btn-danger border border-success rounded-circle text-white fw-bold" href="#">Bracelets</a></li>
           <li class="nav-item"><a class="nav-link btn btn-danger border border-success rounded-circle text-white fw-bold" href="#">Fine</a></li>
           <li class="nav-item"><a class="nav-link btn btn-danger border border-success rounded-circle text-white fw-bold" href="#">Designers</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-danger border border-success rounded-circle text-white fw-bold" href="#">Designers</a></li>
+          
           <li class="nav-item"><a class="nav-link btn btn-danger border border-success rounded-circle text-white fw-bold" href="#">Sale</a></li>
           
         </ul>
 
         <!-- Icons -->
         <div class="d-flex gap-3 fs-4 text-white no-select">
-         <span class="bi bi-person" role="button" title="User"></span>
+         <a href="/login-Page/index.html" title="Login">
+          <span class="bi bi-person" role="button"></span>
+         </a>
          <span class="bi bi-search" role="button" title="Search"></span>
          <span class="bi bi-cart" role="button" title="Cart"></span>
          </div>
@@ -58,6 +61,81 @@
       <p class="lead">Curated. Coveted. Conscious. The jewelry destination where self-expression shines.</p>
       <a href="#" class="btn btn-success border border-success rounded-circle fw-bold">SHOP NOW</a>
     </div>
+  </section>
+  <section>
+     <div class="container py-5">
+    <h2 class="text-center mb-4 fw-bold text-uppercase text-danger rounded-top">Select Your Jewelry Service</h2>
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/jcg-img2.png" alt="Jewelry Cleaning" class="card-img-top">
+          <div class="card-body">
+            <h5 class="service-title">Jewelry Cleaning</h5>
+            <p class="card-text">Bring back the shine! We clean rings, chains, and more.</p>
+            <a href="#" class="btn btn-success w-100">Select</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/jewellery-repair.webp" alt="Jewelry Repair" class="card-img-top">
+          <div class="card-body">
+            <h5 class="service-title">Jewelry Repair</h5>
+            <p class="card-text">Fix broken clasps, resize rings, or repair old pieces.</p>
+            <a href="#" class="btn btn-success w-100">Select</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/custom-Image.jpeg" alt="Custom Jewelry" class="card-img-top">
+          <div class="card-body">
+            <h5 class="service-title">Custom Design</h5>
+            <p class="card-text">Get personalized, one-of-a-kind jewelry crafted for you.</p>
+            <a href="#" class="btn btn-success w-100">Select</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+
   </section>
 
   <!-- ✅ Footer -->
